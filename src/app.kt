@@ -10,24 +10,32 @@ fun main() {
     val c1 = Complex(5.0, 10.0)
     println("Start: $c1")
 
-    print("$c1 + 2.0 + 3.0i = ")
+    print("(+) $c1 + 2.0 + 3.0i = ")
     c1.add(Complex(2.0, 3.0))
     println(c1)
 
-    print("$c1 * 1.0 + 2.0i = ")
+    print("(*) $c1 * 1.0 + 2.0i = ")
     c1.mul(Complex(1.0, 2.0))
     println(c1)
 
-    print("$c1 / 1.0 + 2.0i = ")
+    print("(/) $c1 / 1.0 + 2.0i = ")
     c1.div(Complex(1.0, 2.0))
     println(c1)
 
-    print("$c1 - 7.0 + 13.0i = ")
+    print("(-) $c1 - 7.0 + 13.0i = ")
     c1.sub(Complex(7.0, 13.0))
     println(c1)
 
+    print("(+) $c1 + 5.3 + 5.2i = ")
+    c1.add(Complex(5.3, 5.2))
+    println(c1)
+
+    println("\nComplex = $c1")
+    println("Module: ${c1.getAbs()}")
+    println("Argument: ${c1.getArg()}")
+
     // Task B
-    println("TASK B")
+    println("\n\nTASK B")
     println("----------------------------------------")
 
     val z = Complex(3.0, 5.0)
